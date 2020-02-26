@@ -6,6 +6,7 @@ import {
   Link
 } from "react-router-dom";
 import Electricity from './Electricity'
+import Gas from './Gas'
 
 export default class App extends Component {
   render() {
@@ -21,9 +22,9 @@ export default class App extends Component {
             <li>
               <Link to="/elec">Electricity</Link>
             </li>
-            {/* <li>
+            <li>
               <Link to="/gas">Gas</Link>
-            </li> */}
+            </li>
 
           </ul>
         </nav>
@@ -32,12 +33,12 @@ export default class App extends Component {
           <Route path="/elec">
             <Electricity />
           </Route>
-          {/* <Route path="/gas">
+          <Route path="/gas">
             <Gas />
-          </Route> */}
+          </Route>
           <Route path="/">
             <p>Homepage</p>
-            <p>Click a link above to compare energy providers</p>
+            <p>Click a link above to compare energy providers for each utility</p>
           </Route>
         </Switch>
       </div>
